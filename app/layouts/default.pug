@@ -1,0 +1,11 @@
+include ../../node_modules/bemto.pug/bemto
+include ../../node_modules/jade-bootstrap/_bootstrap
+include ../../node_modules/jade-bootstrap/components/tabs
+
+
+doctype html
+html(lang='ru')
+  include head
+  body
+    block content
+    script(src='assets/scripts/app.min.js')

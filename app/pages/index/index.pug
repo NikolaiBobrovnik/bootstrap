@@ -1,0 +1,56 @@
+extends ../../layouts/default
+
+block head
+  - var pageTitle = 'Versta Project Template'
+
+block content
+  +b.index
+    .container
+      .row
+        .col-md-6
+          +e('p') Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, delectus eos laboriosam laborum officia possimus rerum velit voluptatum? Consequuntur culpa deleniti deserunt dolor, dolore ducimus eaque facere fugiat laborum minus nihil numquam odit officiis quasi reiciendis rem repellat rerum suscipit veniam voluptatem. Consequatur corporis dolore error impedit nam nobis numquam odio tempora vel? Accusantium animi corporis cupiditate dolorem enim est fugiat illum iure labore maiores neque quam quas quod, similique suscipit tenetur totam velit vero. Aut consequuntur cumque ducimus ea enim exercitationem id iste iure molestias mollitia officia officiis omnis perspiciatis quae quia reiciendis saepe sed similique vel, voluptatibus. Ab aliquam aliquid animi architecto at beatae corporis cupiditate dolorum, eius eligendi error ex facere fuga fugiat illum ipsam labore minima modi necessitatibus nihil nulla obcaecati pariatur perspiciatis possimus quae quo reiciendis, rem repellendus tenetur, voluptatum. Amet ducimus error et eum excepturi hic incidunt magni molestiae recusandae sint. Ad architecto asperiores aspernatur assumenda dicta dignissimos, incidunt ipsa itaque libero obcaecati perferendis quas quo repellat sint tempore tenetur velit, voluptatum. At autem delectus dolores ducimus est, ipsa maiores, quaerat quod rem repellat ullam vero vitae? Ad adipisci doloribus facilis illum nam nihil odio optio pariatur, sed vel. Ad beatae itaque voluptas voluptates.
+          +a-btn("#") Default Link Button
+          +a-btn-primary("#") Primary Link Button
+          +a-btn-info("#") Info Link Button
+          +a-btn-warning("#") Warning Link Button
+          +a-btn-danger("#") Danger Link Button
+          +a-btn-success("#") Success Link Button
+
+          +dropdown("My Dropdown Menu",[
+            {text: "Bootstrap", url: "http://www.getbootstrap.com"},
+            {text: "JADE", url: "http://www.jade-lang.com"},
+            {text: "NodeJS", url: "http://www.nodejs.org"}
+          ])
+
+
+
+
+        .col-md-6
+          +e('p') Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, delectus eos laboriosam laborum officia possimus rerum velit voluptatum? Consequuntur culpa deleniti deserunt dolor, dolore ducimus eaque facere fugiat laborum minus nihil numquam odit officiis quasi reiciendis rem repellat rerum suscipit veniam voluptatem. Consequatur corporis dolore error impedit nam nobis numquam odio tempora vel? Accusantium animi corporis cupiditate dolorem enim est fugiat illum iure labore maiores neque quam quas quod, similique suscipit tenetur totam velit vero. Aut consequuntur cumque ducimus ea enim exercitationem id iste iure molestias mollitia officia officiis omnis perspiciatis quae quia reiciendis saepe sed similique vel, voluptatibus. Ab aliquam aliquid animi architecto at beatae corporis cupiditate dolorum, eius eligendi error ex facere fuga fugiat illum ipsam labore minima modi necessitatibus nihil nulla obcaecati pariatur perspiciatis possimus quae quo reiciendis, rem repellendus tenetur, voluptatum. Amet ducimus error et eum excepturi hic incidunt magni molestiae recusandae sint. Ad architecto asperiores aspernatur assumenda dicta dignissimos, incidunt ipsa itaque libero obcaecati perferendis quas quo repellat sint tempore tenetur velit, voluptatum. At autem delectus dolores ducimus est, ipsa maiores, quaerat quod rem repellat ullam vero vitae? Ad adipisci doloribus facilis illum nam nihil odio optio pariatur, sed vel. Ad beatae itaque voluptas voluptates.
+          +icon("heart-empty")
+          +icon-primary("heart-empty")
+          +icon-info("heart-empty")
+          +icon-warning("heart-empty")
+          +icon-danger("heart-empty")
+          +icon-success("heart-empty")
+
+      .row
+        .col-md-12
+          +tab-list(["Home", "Profile", "Messages", "Settings"],0)
+            +tab("Home","active")
+              h1 Home
+              p This is Home tab
+            +tab("Profile")
+              h1 Profile
+              p This is Profile tab
+            +tab("Messages")
+              h1 Messages
+              p This is Messages tab
+            +tab("Settings")
+              h1 Settings
+              p This is Settings tab
+
+          .row
+            .col-md-6
+              +tooltip-right("This is a tooltip on the right")
+            .col-md-6
