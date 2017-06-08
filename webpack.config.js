@@ -33,6 +33,11 @@ module.exports = (watch = false) => ({
         NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development'),
       },
     }),
+    new webpack.ProvidePlugin({
+      'jQuery': 'jquery',
+      'window.jQuery': 'jquery',
+      'window.$': 'jquery',
+    }),
     new webpack.NoErrorsPlugin(),
     !isDebug ? new webpack.optimize.UglifyJsPlugin() : f => f,
   ],

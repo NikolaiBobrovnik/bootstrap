@@ -1,7 +1,6 @@
 import $ from 'jquery';
-import tabs from '../../node_modules/jade-bootstrap/test/tabs';
+import 'bootstrap/dist/js/bootstrap.min';
 
 $(() => {
   // your code goes here
-  tabs();
 });
